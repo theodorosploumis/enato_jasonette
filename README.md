@@ -1,5 +1,5 @@
 [![logo enato](https://www.enato.edu.gr/themes/getta/logo.png)](https://www.enato.edu.gr) + 
-[![logo Jasonelle](https://jasonelle.com/favicon.png =90px)](https://jasonelle.com)
+[![logo Jasonelle](https://avatars3.githubusercontent.com/u/43641355?s=80)](https://jasonelle.com)
 
 
 # About
