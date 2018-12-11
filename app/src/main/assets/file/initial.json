@@ -41,7 +41,7 @@
                   "action": {
                     "type": "$href",
                     "options": {
-                      "url": "https://www.enato.edu.gr/sites/default/files/jasonette/node.json",
+                      "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/node.json",
                       "options": {
                         "id": "{{id}}",
                         "title": "{{title}}"
