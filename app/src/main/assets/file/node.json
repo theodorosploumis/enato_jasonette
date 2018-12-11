@@ -81,7 +81,7 @@
                     },
                     {
                       "type": "label",
-                      "text": "View on browser",
+                      "text": "Άνοιγμα σε browser",
                       "style": {
                         "color": "#ffffff",
                         "background": "#417daf",
