@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">9ο Δημοτικό Σχολείο Σερρών</string>
+    <string name="url">file://initial.json</string>
+    <string name="launch">file://preload.json</string>
+</resources>
