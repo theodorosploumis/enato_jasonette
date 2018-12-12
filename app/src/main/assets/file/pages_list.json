@@ -1,0 +1,70 @@
+{
+  "$jason": {
+    "head": {
+      "title": "9nth Primary School of Serres",
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://www.enato.edu.gr/rest/pages/all"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "border": "none"
+          },
+          "header": {
+            "title": "Βασικές σελίδες",
+            "style": {
+              "color": "#ffffff",
+              "background": "#000000"
+            }
+          },
+          "sections": [{
+              "items": {
+                "{{ #each $jason }}": {
+                  "type": "vertical",
+                  "style": {
+                    "spacing": "10"
+                  },
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/page_item.json",
+                      "options": {
+                        "id": "{{id}}",
+                        "title": "{{title}}"
+                      }
+                    }
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "{{title}}",
+                      "style": {
+                        "background": "#417daf",
+                        "color": "#ffffff",
+                        "padding": 5,
+                        "size": 20
+                      }
+                    }
+                  ]
+                }
+              }
+          }]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$jason": {
+    "head": {
+      "title": "{{$params.title}}",
+      "actions": {
+        "$show": {
+          "trigger": "fetch"
+        },
+        "$load": {
+          "trigger": "fetch"
+        },
+        "fetch": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://www.enato.edu.gr/rest/pages/{{$params.id}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "style": {
+            "border": "none"
+          },
+          "header": {
+            "title": "{{$params.title}}",
+            "style": {
+              "color": "#ffffff",
+              "background": "#417daf",
+              "padding": 10,
+              "spacing": 10
+            }
+          },
+          "sections": [
+            {
+              "items": {
+                "{{ #each $jason }}": {
+                  "type": "vertical",
+                  "style": {
+                    "spacing": "10"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "text": "{{content}}",
+                      "style": {
+                        "color": "#000000",
+                        "size": "15",
+                        "font": "HelveticaNeue"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Κατηγορίες: {{taxonomy}}",
+                      "style": {
+                        "color": "#000000",
+                        "size": "13",
+                        "font": "HelveticaNeue-Black"
+                      }
+                    },
+                    "{{#each images}}": {
+                      "type": "image",
+                      "url": "{{$jason.images.value}}",
+                      "style": {
+                        "width": "480"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "text": "Άνοιγμα σε browser",
+                      "style": {
+                        "color": "#ffffff",
+                        "background": "#417daf",
+                        "font": "HelveticaNeue-Bold",
+                        "size": "14",
+                        "padding": "10",
+                        "corner_radius": "10"
+                      },
+                      "href": {
+                        "url": "https://www.enato.edu.gr/node/{{id}}",
+                        "view": "web"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+
+    }
+  }
+}

@@ -2,73 +2,36 @@
   "$jason": {
     "head": {
       "title": "9nth Primary School of Serres",
-      "actions": {
-        "$load": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://www.enato.edu.gr/rest/news/all"
-          },
-          "success": {
-            "type": "$render"
-          }
-        },
-        "$foreground": {
-          "type": "$reload"
-        },
-        "$pull": {
-          "type": "$reload"
-        }
-      },
       "templates": {
         "body": {
           "style": {
             "border": "none"
           },
           "header": {
-            "title": "Τελευταία Νέα",
+            "title": "9o Δημ. Σχολείο Σερρών",
             "style": {
               "color": "#ffffff",
               "background": "#000000"
             }
           },
           "sections": [{
-              "items": {
-                "{{ #each $jason }}": {
-                  "type": "vertical",
-                  "style": {
-                    "spacing": "10"
+            "items": [
+              "tabs": {
+                "style": {
+                  "background": "#ffffff"
+                },
+                "items": [
+                  {
+                    "image": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/news_tab.png",
+                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json"
                   },
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/node.json",
-                      "options": {
-                        "id": "{{id}}",
-                        "title": "{{title}}"
-                      }
-                    }
-                  },
-                  "components": [
-                    {
-                      "type": "label",
-                      "text": "{{date}}",
-                      "style": {
-                        "size": "13",
-                        "font": "HelveticaNeue-Bold"
-                      }
-                    },
-                    {
-                      "type": "label",
-                      "text": "{{title}}",
-                      "style": {
-                        "background": "#417daf",
-                        "color": "#ffffff",
-                        "padding": 5
-                      }
-                    }
-                  ]
-                }
+                  {
+                    "image": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/pages_tab.png",
+                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json"
+                  }
+                ]
               }
+            ]
           }]
         }
       }
