@@ -1,40 +1,56 @@
 {
   "$jason": {
     "head": {
-      "title": "9nth Primary School of Serres",
-      "templates": {
-        "body": {
-          "style": {
-            "border": "none"
-          },
-          "header": {
-            "title": "9o Δημ. Σχολείο Σερρών",
+      "title": "9nth Primary School of Serres"
+    },
+    "body": {
+      "style": {
+        "border": "none"
+      },
+      "header": {
+        "title": "9o Δημ. Σχολείο Σερρών",
+        "style": {
+          "color": "#ffffff",
+          "background": "#000000"
+        }
+      },
+      "sections": [{
+        "items": [
+          {
+            "type": "horizontal",
             "style": {
-              "color": "#ffffff",
-              "background": "#000000"
-            }
-          },
-          "sections": [{
-            "items": [
-              "tabs": {
+              "align": "bottom",
+              "background": "#dddddd"
+            },
+            "components": [
+              {
+                "type": "label",
                 "style": {
-                  "background": "#ffffff"
+                  "font": "AvenirNext-Bold",
+                  "size": "20",
+                  "color": "#000000"
                 },
-                "items": [
-                  {
-                    "image": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/news_tab.png",
-                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json"
-                  },
-                  {
-                    "image": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/pages_tab.png",
-                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json"
-                  }
-                ]
+                "text": "News",
+                "href": {
+                  "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json"
+                }
+              },
+              {
+                "type": "label",
+                "style": {
+                  "font": "AvenirNext-Bold",
+                  "size": "20",
+                  "color": "#000000"
+                },
+                "text": "Pages",
+                "href": {
+                  "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json"
+                }
               }
             ]
-          }]
-        }
-      }
+          }
+        ]
+      }]
     }
   }
 }
