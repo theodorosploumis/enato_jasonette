@@ -21,8 +21,7 @@
               "url": "https://www.enato.edu.gr/themes/getta/logo.png",
               "style": {
                 "width": "100%",
-                "padding": "0",
-                "spacing": "10",
+                "padding": "20",
                 "align": "center"
               }
             }
@@ -35,33 +34,31 @@
               },
               "components": [
                 {
-                  "type": "label",
+                  "type": "button",
+                  "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/pages_tab.png",
                   "style": {
-                    "font": "AvenirNext-Bold",
-                    "width": "50%",
-                    "size": "20",
-                    "align": "center",
-                    "color": "#ffffff",
-                    "background": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/news_tab.png"
+                    "width": "200"
                   },
-                  "text": "News",
-                  "href": {
-                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json"
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json",
+                      "transition": "modal"
+                    }
                   }
                 },
                 {
-                  "type": "label",
+                  "type": "button",
+                  "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/news_tab.png",
                   "style": {
-                    "font": "AvenirNext-Bold",
-                    "width": "50%",
-                    "size": "20",
-                    "align": "center",
-                    "color": "#ffffff",
-                    "background": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/pages_tab.png"
+                    "width": "200"
                   },
-                  "text": "Pages",
-                  "href": {
-                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json"
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json",
+                      "transition": "modal"
+                    }
                   }
                 }
               ]
