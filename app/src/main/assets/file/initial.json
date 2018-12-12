@@ -29,7 +29,6 @@
               "type": "horizontal",
               "style": {
                 "align": "bottom",
-                "background": "#dddddd",
                 "padding": "10"
               },
               "components": [
