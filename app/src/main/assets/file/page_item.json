@@ -53,22 +53,6 @@
                     },
                     {
                       "type": "label",
-                      "text": "Κατηγορίες: {{taxonomy}}",
-                      "style": {
-                        "color": "#000000",
-                        "size": "13",
-                        "font": "HelveticaNeue-Black"
-                      }
-                    },
-                    "{{#each images}}": {
-                      "type": "image",
-                      "url": "{{$jason.images.value}}",
-                      "style": {
-                        "width": "480"
-                      }
-                    },
-                    {
-                      "type": "label",
                       "text": "Άνοιγμα σε browser",
                       "style": {
                         "color": "#ffffff",

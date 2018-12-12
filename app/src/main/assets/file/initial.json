@@ -16,40 +16,57 @@
       },
       "sections": [{
         "items": [
-          {
-            "type": "horizontal",
-            "style": {
-              "align": "bottom",
-              "background": "#dddddd"
-            },
-            "components": [
-              {
-                "type": "label",
-                "style": {
-                  "font": "AvenirNext-Bold",
-                  "size": "20",
-                  "color": "#000000"
-                },
-                "text": "News",
-                "href": {
-                  "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json"
-                }
-              },
-              {
-                "type": "label",
-                "style": {
-                  "font": "AvenirNext-Bold",
-                  "size": "20",
-                  "color": "#000000"
-                },
-                "text": "Pages",
-                "href": {
-                  "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json"
-                }
+            {
+              "type": "image",
+              "url": "https://www.enato.edu.gr/themes/getta/logo.png",
+              "style": {
+                "width": "100%",
+                "padding": "0",
+                "spacing": "10",
+                "align": "center"
               }
-            ]
-          }
-        ]
+            }
+            ,{
+              "type": "horizontal",
+              "style": {
+                "align": "bottom",
+                "background": "#dddddd",
+                "padding": "10"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "style": {
+                    "font": "AvenirNext-Bold",
+                    "width": "50%",
+                    "size": "20",
+                    "align": "center",
+                    "color": "#ffffff",
+                    "background": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/news_tab.png"
+                  },
+                  "text": "News",
+                  "href": {
+                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/news_list.json"
+                  }
+                },
+                {
+                  "type": "label",
+                  "style": {
+                    "font": "AvenirNext-Bold",
+                    "width": "50%",
+                    "size": "20",
+                    "align": "center",
+                    "color": "#ffffff",
+                    "background": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/images/pages_tab.png"
+                  },
+                  "text": "Pages",
+                  "href": {
+                    "url": "https://raw.githubusercontent.com/theodorosploumis/enato_jasonette/master/app/src/main/assets/file/pages_list.json"
+                  }
+                }
+              ]
+            }
+          ]
       }]
     }
   }
